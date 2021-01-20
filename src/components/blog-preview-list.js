@@ -50,7 +50,7 @@ export default function BlogPreviewList() {
           <div class="leading-relaxed">
           <BlockContent blocks={post.body} projectId="x3paw0j9" dataset="production"/>
           </div>
-          <Link key={index} to={"/blog/" + post.slug.current} key={post.slug.current} className="text-green-600 inline-flex items-center mt-4">
+          <Link key={index} to={"/blog/" + post.slug.current}  className="text-green-600 inline-flex items-center mt-4">
             Read More
             <svg
               class="w-4 h-4 ml-2"
