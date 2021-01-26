@@ -19,16 +19,16 @@ export const Slider = props => (
     className="mx-auto object-scale-down w-fill shadow-2xl"
   >
     <div className="container opacity-50">
-      <img class=" h-full w-full object-scale-down " src={image1} alt="" />
+      <img class=" h-fill w-fill object-scale-down " src={image1} alt="" />
     </div>
     <div className="container opacity-50">
-      <img class=" h-full w-full object-scale-down " src={image2} alt="" />
+      <img class=" h-fill w-fill object-scale-down " src={image2} alt="" />
     </div>
     <div className="container opacity-50">
-      <img class=" h-full w-full object-scale-down " src={image3} alt="" />
+      <img class=" h-fill w-fill object-scale-down " src={image3} alt="" />
     </div>
     <div className="container opacity-50">
-      <img class=" h-full w-full object-scale-down " src={image4} alt="" />
+      <img class=" h-fill w-fill object-scale-down " src={image4} alt="" />
     </div>
   </Carousel>
 );

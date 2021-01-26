@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   name: "post",
   title: "Post",
@@ -30,6 +31,13 @@ export default {
       options: {
         hotspot: true,
       },
+    },
+    {
+      name: 'excerpt',
+      type: 'text',
+      title: 'Excerpt',
+      description:
+        'This ends up on summary pages, on Google, when people share your post in social media.'
     },
     {
       name: "categories",

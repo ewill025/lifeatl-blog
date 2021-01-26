@@ -18,7 +18,7 @@ class Home extends Component {
           <div className="grid grid-cols-3 gap-4 divide-x divide-green-600 divide-opacity-25">
             <div>
               <h1 className="text-2xl">Culture</h1>
-              <p className="p-5">
+              <p className="p-5 prose prose-lg sm:prose lg:prose-lg xl:prose-xl">
                 whether your just starting with your business or even if you’ve
                 been grinding for years LifeATL wants to bring everyone
                 together.{" "}
@@ -26,21 +26,21 @@ class Home extends Component {
             </div>
             <div>
               <h1 className="text-2xl">Community</h1>
-              <p className="p-5">
+              <p className="p-5 prose prose-lg sm:prose lg:prose-lg xl:prose-xl">
                 Our purpose is to create a community of rising entrepreneurs
                 that support one another and their respective communities.{" "}
               </p>
             </div>
             <div>
               <h1 className="text-2xl">Content</h1>
-              <p className="p-5">
+              <p className="p-5 prose prose-lg sm:prose lg:prose-lg xl:prose-xl">
                 We want to give people a platform/organization they can count on
                 to help them with brand exposure, events, and most importantly
                 help people generate success through their vision.
               </p>
             </div>
             <div className="col-span-3 ">
-              <p className="p-5">
+              <p className="p-5 mx-auto prose prose-lg sm:prose lg:prose-lg xl:prose-xl">
                 We bring passion, confidence, and the ability to reach out and
                 work with anyone professionally. We strive to connect others as
                 well as maximize exposure for all parties involved.{" "}
@@ -51,7 +51,7 @@ class Home extends Component {
         <div className="w-11/12 h-fill mx-auto border-b-2 border-green-600 py-5">
           <h1 className="uppercase text-3xl">Latest Blog Posts</h1>
         </div>
-        <div className="w-11/12 h-fill mx-auto">
+        <div className="w-11/12 h-fill mx-auto ">
           <BlogPreviewList/>
         </div>
       </div>
