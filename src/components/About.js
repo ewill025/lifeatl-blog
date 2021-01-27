@@ -71,11 +71,11 @@ export default function About() {
                 <img
                   className="flex-shrink-0 rounded-full h-48 w-48 object-cover object-center mb-4"
                   src={image2}
-                  alt="Ford"
+                  alt="Imani"
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Ford
+                    Imani
                   </h2>
                 </div>
               </div>
@@ -86,11 +86,11 @@ export default function About() {
                 <img
                   className="flex-shrink-0 rounded-full h-48 w-48 object-cover object-center mb-4"
                   src={image3}
-                  alt="Ford"
+                  alt="TJ"
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Ford
+                    TJ
                   </h2>
                 </div>
               </div>
@@ -101,11 +101,11 @@ export default function About() {
                 <img
                   className="flex-shrink-0 rounded-full h-48 w-48 object-cover object-center mb-4"
                   src={image4}
-                  alt="Ford"
+                  alt="Brittney"
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Ford
+                    Brittney
                   </h2>
                 </div>
               </div>
@@ -115,11 +115,11 @@ export default function About() {
                 <img
                   className="flex-shrink-0 rounded-full h-48 w-48 object-cover object-center mb-4"
                   src={image5}
-                  alt="Ford"
+                  alt="Bryant"
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Ford
+                    Bryant
                   </h2>
                 </div>
               </div>
@@ -129,11 +129,11 @@ export default function About() {
                 <img
                   className="flex-shrink-0 rounded-full h-48 w-48 object-cover object-center mb-4"
                   src={image6}
-                  alt="Ford"
+                  alt="Erin"
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Ford
+                    Erin
                   </h2>
                 </div>
               </div>
@@ -143,11 +143,11 @@ export default function About() {
                 <img
                   className="flex-shrink-0 rounded-full h-48 w-48 object-cover object-center mb-4"
                   src={image7}
-                  alt="Ford"
+                  alt="Eric"
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Ford
+                    Eric
                   </h2>
                 </div>
               </div>
@@ -157,11 +157,11 @@ export default function About() {
                 <img
                   className="flex-shrink-0 rounded-full h-48 w-48 object-cover object-center mb-4"
                   src={image8}
-                  alt="Ford"
+                  alt="Shanelle"
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Ford
+                    Shanelle
                   </h2>
                 </div>
               </div>
@@ -171,11 +171,11 @@ export default function About() {
                 <img
                   className="flex-shrink-0 rounded-full h-48 w-48 object-cover object-center mb-4"
                   src={image9}
-                  alt="Ford"
+                  alt="Tyrelle"
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Ford
+                    Tyrelle
                   </h2>
                 </div>
               </div>
@@ -185,11 +185,11 @@ export default function About() {
                 <img
                   className="flex-shrink-0 rounded-full h-48 w-48 object-cover object-center mb-4"
                   src={image10}
-                  alt="Ford"
+                  alt="Dizzle"
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Ford
+                    Dizzle
                   </h2>
                 </div>
               </div>

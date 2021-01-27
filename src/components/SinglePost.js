@@ -61,8 +61,8 @@ export default function SinglePost() {
         <img
           src={singlePost.mainImage.asset.url}
           alt={singlePost.title}
-          style={{ height: "600px", width: "1200px" }}
-          className="mx-auto object-cover shadow-2xl"
+          style={{ height: "450px", width: "1200px" }}
+          className="mx-auto object-cover object-center shadow-2xl"
         />
       </div>
       <div className="container mx-auto w-11/12 p-5">

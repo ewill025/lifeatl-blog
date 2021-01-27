@@ -42,11 +42,14 @@ export default function Blog() {
 
   return (
     <main className="min-h-screen p-12">
-      <section className="container mx-auto">
-        <h1 className="text-5xl flex justify-center mb-5 p-5">
+      <section className="container  px-5 py-24 mx-auto">
+        <div className="flex flex-col text-center w-full mb-20">
+          <h1 className="sm:text-3xl lg:text-5xl font-medium title-font mb-4 text-black">
           Welcome to Life ATL Blog
         </h1>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-5">
+        </div>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {postData &&
             postData.map((post, index) => (
               <article>
