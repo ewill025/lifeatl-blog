@@ -57,10 +57,7 @@ export default function BlogPreviewList() {
                 {post.title}
               </h2>
               <div class="leading-relaxed">
-                <div>
-                  {post.excerpt}
-                </div>
-                
+                <div>{post.excerpt}</div>
               </div>
               <Link
                 key={index}
