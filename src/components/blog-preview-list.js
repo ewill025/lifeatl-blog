@@ -44,7 +44,7 @@ export default function BlogPreviewList() {
                 <img
                   src={post.mainImage.asset.url}
                   alt={post.mainImage.alt}
-                  className="w-1/2 h-full object-scale-down"
+                  className="lg:h-48 sm:h-36 lg:w-48 sm:w-36 object-cover object-center "
                 />
               </span>
 

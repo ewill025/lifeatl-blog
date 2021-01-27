@@ -4,55 +4,52 @@ import { Slider } from "./Carousel.component.js";
 import BlogPreviewList from "./blog-preview-list";
 import "./home.css";
 
-
-
-
 class Home extends Component {
-  
   render() {
     return (
       <div className="container mx-auto space-y-5 font-medium">
         <Slider />
-        <div className="w-10/12 h-fill mx-auto text-center uppercase rounded-none border border-opacity-25 border-green-600">
-          <h3 className="uppercase my-14 text-5xl">Who We Are</h3>
-          <div className="grid grid-cols-3 gap-4 divide-x divide-green-600 divide-opacity-25">
-            <div>
-              <h1 className="text-2xl">Culture</h1>
-              <p className="p-5 prose prose-lg sm:prose lg:prose-lg xl:prose-xl">
-                whether your just starting with your business or even if you’ve
+        <div className="container w-11/12 px-5 py-24 mx-auto">
+          <div className="flex flex-col text-center w-full mb-20">
+            <h1 className="sm:text-3xl lg:text-5xl font-medium title-font mb-4 text-black">
+              WHO WE ARE
+            </h1>
+          </div>
+          <div className="flex flex-wrap divide-x divide-green-700">
+      <div className="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6">
+        <h2 className=" text-center text-lg sm:text-xl text-green-700 font-medium title-font mb-2">CULTURE</h2>
+        <p className="leading-relaxed text-base uppercase mb-4">whether your just starting with your business or even if you’ve
                 been grinding for years LifeATL wants to bring everyone
-                together.{" "}
-              </p>
-            </div>
-            <div>
-              <h1 className="text-2xl">Community</h1>
-              <p className="p-5 prose prose-lg sm:prose lg:prose-lg xl:prose-xl">
-                Our purpose is to create a community of rising entrepreneurs
-                that support one another and their respective communities.{" "}
-              </p>
-            </div>
-            <div>
-              <h1 className="text-2xl">Content</h1>
-              <p className="p-5 prose prose-lg sm:prose lg:prose-lg xl:prose-xl">
-                We want to give people a platform/organization they can count on
+                together.</p>
+        
+      </div>
+      <div className="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6">
+        <h2 className=" text-center text-lg sm:text-xl text-green-700 font-medium title-font mb-2">COMMUNITY</h2>
+        <p className="leading-relaxed text-base uppercase mb-4">Our purpose is to create a community of rising entrepreneurs
+                that support one another and their respective communities.</p>
+        
+      </div>
+      <div className="xl:w-1/3 lg:w-1/2 md:w-full px-8 py-6">
+        <h2 className=" text-center text-lg sm:text-xl text-green-700 font-medium title-font mb-2">CONTENT</h2>
+        <p className="leading-relaxed text-base uppercase mb-4">We want to give people a platform/organization they can count on
                 to help them with brand exposure, events, and most importantly
-                help people generate success through their vision.
-              </p>
-            </div>
-            <div className="col-span-3 ">
-              <p className="p-5 mx-auto prose prose-lg sm:prose lg:prose-lg xl:prose-xl">
+                help people generate success through their vision.</p>
+        
+      </div>
+      <div className="col-span-3 text-center border-none ">
+              <p className="p-5 mx-auto lg:text-lg sm:text-sm">
                 We bring passion, confidence, and the ability to reach out and
                 work with anyone professionally. We strive to connect others as
                 well as maximize exposure for all parties involved.{" "}
               </p>
             </div>
-          </div>
+    </div>
         </div>
-        <div className="w-11/12 h-fill mx-auto border-b-2 border-green-600 py-5">
+        <div className="w-11/12 h-fill mx-auto border-b-2 border-green-700 py-5">
           <h1 className="uppercase text-3xl">Latest Blog Posts</h1>
         </div>
         <div className="w-11/12 h-fill mx-auto ">
-          <BlogPreviewList/>
+          <BlogPreviewList />
         </div>
       </div>
     );
