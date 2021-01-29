@@ -49,7 +49,7 @@ export default function Blog() {
         </h1>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {postData &&
             postData.map((post, index) => (
               <article>

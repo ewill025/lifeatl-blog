@@ -5,8 +5,10 @@ import SinglePost from "./components/SinglePost";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
+import Footer from "./components/footer";
 function App() {
   return (
+    
     <BrowserRouter>
     <Navbar/>
       <Switch>
@@ -16,7 +18,9 @@ function App() {
         <Route component={Blog} path='/blog'/>
         <Route component={Contact} path='/contact'/>
       </Switch>
+      <Footer/>
     </BrowserRouter>
+    
   )
 }
 

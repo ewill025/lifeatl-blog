@@ -2,13 +2,21 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import  image  from "./images/LifeATL-Logo.png";
 
-export default function Navbar() {
+export default function Navbar(props) {
+  const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <header className="relative bg-white pb-2 shadow-2xl ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center border-b-2 border-green-600 py-6 md:justify-start md:space-x-10">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
-            <NavLink to="/" exact>
+    <>
+    <nav
+      className={
+        (props.white
+          ? "top-0 absolute z-50 w-full"
+          : "relative shadow-lg bg-white py-2 shadow-2xl") +
+        " flex flex-wrap items-center justify-between py-4  px-6 navbar-expand-lg"
+      }
+    >
+      <div className="container   px-6 py-4 mx-auto border-b-2 border-green-600 flex flex-wrap items-center justify-between">
+        <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <NavLink to="/" exact>
               <span class="sr-only">LifeATL</span>
               <img
                 class="h-8 w-auto sm:h-16"
@@ -16,145 +24,101 @@ export default function Navbar() {
                 alt="Life ATL Logo"
               />
             </NavLink>
-            <nav className=" ml-10 hidden md:flex space-x-16 ">
-              <NavLink
-                className="text-base inline-flex items-center font-medium text-gray-500 hover:text-green-600"
-                to="/"
-                exact
-              >
-                Home
-              </NavLink>
-              <NavLink
-                className="text-base inline-flex items-center font-medium text-gray-500 hover:text-green-600"
-                to="/about"
-              >
-                About
-              </NavLink>
-              <NavLink
-                className="text-base inline-flex items-center font-medium text-gray-500 hover:text-green-600"
-                to="/blog"
-              >
-                Blog
-              </NavLink>
-            </nav>
-          </div>
-          <div class="-mr-2 -my-2 md:hidden">
-            <button
-              type="button"
-              class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-green-600 hover:bg-black-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-            >
-              <span class="sr-only">Open menu</span>
-
-              <svg
-                class="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          </div>
-
-          <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <NavLink
-              to="/"
-              className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-green-600"
-              exact
-            >
-              Shop
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className=" ml-8 whitespace-nowrap text-base font-medium text-gray-500 hover:text-green-600"
-            >
-              Contact
-            </NavLink>
-          </div>
+          <button
+            className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onClick={() => setNavbarOpen(!navbarOpen)}
+          >
+            <i
+              className={
+                (props.transparent ? "text-green-700" : "text-green-700") +
+                " fas fa-bars"
+              }
+            ></i>
+          </button>
         </div>
-      </div>
+        <div
+          className={
+            "lg:flex flex-grow items-center bg-transparent lg:bg-transparent lg:shadow-none" +
+            (navbarOpen ? " block rounded" : " hidden")
+          }
+          id="example-navbar-warning"
+        >
+          <ul className="flex flex-col lg:flex-row list-none lg:mr-auto">
+            <li className="flex items-center">
+              <NavLink
+                className={
+                  (props.transparent
+                    ? "lg:text-black lg:hover:text-green-300 text-green-800"
+                    : "text-black hover:text-green-700") +
+                  " px-3 py-4 lg:py-2 items-center text-base uppercase flex font-bold"
+                }
+                to="/" exact
+              >
+              <span className="inline-block ml-2">Home</span>
+              </NavLink>
+              </li>
+              <li className="flex items-center">
+              <NavLink
+                className={
+                  (props.transparent
+                    ? "lg:text-black lg:hover:text-green-300 text-green-800"
+                    : "text-black hover:text-green-700") +
+                  " px-3 py-4 lg:py-2 items-center text-base uppercase flex font-bold"
+                }
+                to="/about" 
+              >
+               <span className="inline-block ml-2">About</span>
+              </NavLink>
 
-      <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-          <div class="pt-5 pb-6 px-5">
-            <div class="flex items-center justify-between">
-              <div>
-                <img
-                  class="h-8 w-auto"
-                  src={image}
-                  alt="Life ATL"
-                />
-              </div>
-              <div class="-mr-2">
-                <button
-                  type="button"
-                  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                >
-                  <span class="sr-only">Close menu</span>
-                  <svg
-                    class="h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="py-6 px-5 space-y-6">
-            <div class="grid grid-cols gap-y-4 gap-x-8">
+              </li>
+              <li className="flex items-center">
               <NavLink
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
-                to="/"
-                exact
+                className={
+                  (props.transparent
+                    ? "lg:text-black lg:hover:text-green-300 text-green-800"
+                    : "text-black hover:text-green-700") +
+                  " px-3 py-4 lg:py-2 items-center text-base uppercase flex font-bold"
+                }
+                to="/blog" 
               >
-                Home
+                <span className="inline-block ml-2">Blog</span>
               </NavLink>
+            </li>
+          </ul>
+          <ul className="flex  flex-col lg:flex-row list-none lg:ml-auto">
+            <li className="flex items-center">
               <NavLink
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
-                to="/about"
+                className={
+                  (props.transparent
+                    ? "lg:text-black lg:hover:text-green-300 text-green-800"
+                    : "text-black hover:text-green-700") +
+                  " px-3 py-4 lg:py-2 flex items-center text-base uppercase font-bold"
+                }
+                to ="#"
               >
-                About
+                <span className=" inline-block ml-2">Shop</span>
               </NavLink>
+            </li>
+
+            <li className="flex items-center">
               <NavLink
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
-                to="/blog"
-              >
-                Blog
-              </NavLink>
-              <NavLink
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
-                to="/"
-                exact
-              >
-                Shop
-              </NavLink>
-              <NavLink
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                className={
+                  (props.transparent
+                    ? "lg:text-black lg:hover:text-green-700 text-green-700"
+                    : "text-black hover:text-green-700") +
+                  " px-3 py-4 lg:py-2 flex items-center text-base uppercase font-bold"
+                }
                 to="/contact"
               >
-                Contact
+                <span className="inline-block ml-2">Contact Us</span>
               </NavLink>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
+    </nav>
+  </>
+    
   );
 }

@@ -16,7 +16,8 @@ export const Slider = props => (
     interval={3000}
     transitionTime={300}
     showIndicators={false}
-    className="mx-auto object-scale-down w-fill shadow-2xl"
+    fade={true}
+    className="mx-auto object-scale-down w-fill "
   >
     <div className="container opacity-50">
       <img class=" h-fill w-fill object-scale-down " src={image1} alt="" />

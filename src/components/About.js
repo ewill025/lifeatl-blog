@@ -15,7 +15,7 @@ export default function About() {
   return (
     <div className="container mx-auto p-5 w-11/12">
       <div className="container">
-        <h1 className="uppercase my-5 text-5xl font-bold border-b-2 border-green-600">
+        <h1 className="uppercase my-5 py-6 text-5xl font-bold border-b-2 border-green-600">
           About Us
         </h1>
 

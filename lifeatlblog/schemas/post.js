@@ -32,13 +32,7 @@ export default {
         hotspot: true,
       },
     },
-    {
-      name: 'excerpt',
-      type: 'text',
-      title: 'Excerpt',
-      description:
-        'This ends up on summary pages, on Google, when people share your post in social media.'
-    },
+   
     {
       name: "categories",
       title: "Categories",
@@ -50,6 +44,13 @@ export default {
       title: "Release date",
       name: "releaseDate",
       type: "date",
+    },
+    {
+      name: 'excerpt',
+      type: 'text',
+      title: 'Excerpt',
+      description:
+        'This ends up on summary pages, on Google, when people share your post in social media.'
     },
     {
       name: "body",
