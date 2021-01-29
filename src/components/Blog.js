@@ -45,10 +45,9 @@ export default function Blog() {
       <section className="container  px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h1 className="sm:text-3xl lg:text-5xl font-medium title-font mb-4 text-black">
-          Welcome to Life ATL Blog
-        </h1>
+            Welcome to Life ATL Blog
+          </h1>
         </div>
-        
         <div className="grid  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {postData &&
             postData.map((post, index) => (
