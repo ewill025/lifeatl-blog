@@ -38,6 +38,15 @@ export default{
         },
       ],
     },
+    {
+        title: 'Twitter',
+        name: 'href',
+        type: 'url',
+        validation: Rule => Rule.uri({
+          scheme: ['http', 'https', 'mailto', 'tel']
+        })
+      },
+     
   ],
   preview: {
     select: {
