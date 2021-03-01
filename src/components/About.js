@@ -157,11 +157,11 @@ export default function About() {
                 <img
                   className="flex-shrink-0 rounded-full h-48 w-48 object-cover object-center mb-4"
                   src={image8}
-                  alt="Shanelle"
+                  alt="Shenelle"
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Shanelle
+                    Shenelle
                   </h2>
                 </div>
               </div>
@@ -171,11 +171,11 @@ export default function About() {
                 <img
                   className="flex-shrink-0 rounded-full h-48 w-48 object-cover object-center mb-4"
                   src={image9}
-                  alt="Tyrelle"
+                  alt="Tyrell"
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Tyrelle
+                    Tyrell
                   </h2>
                 </div>
               </div>
