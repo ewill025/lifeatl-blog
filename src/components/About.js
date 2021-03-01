@@ -161,7 +161,7 @@ export default function About() {
                 />
                 <div className="w-full">
                   <h2 className="title-font font-medium text-lg text-gray-900">
-                    Shenelle
+                    Shenelle Simone
                   </h2>
                 </div>
               </div>
