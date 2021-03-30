@@ -23,6 +23,9 @@ export const Slider = props => (
       <img class=" h-fill w-fill object-scale-down " src={image1} alt="" />
     </div>
     <div className="container opacity-50">
+      <img class=" h-fill w-fill object-scale-down " src={image1} alt="" />
+    </div>
+    <div className="container opacity-50">
       <img class=" h-fill w-fill object-scale-down " src={image2} alt="" />
     </div>
     <div className="container opacity-50">

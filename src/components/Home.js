@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.css";
 import { Slider } from "./Carousel.component.js";
 import BlogPreviewList from "./blog-preview-list";
+import UpcomingEvents from "./UpcomingEvents";
 import "./home.css";
 
 class Home extends Component {
@@ -9,6 +10,7 @@ class Home extends Component {
     return (
       <div className="container mx-auto font-medium">
         <Slider />
+        <UpcomingEvents/>
         <div className="container w-11/12 px-5 py-12 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-3xl lg:text-5xl font-medium title-font mb-4 text-black">

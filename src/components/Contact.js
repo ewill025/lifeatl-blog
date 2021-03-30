@@ -73,7 +73,7 @@ export default function Contact() {
               <button
                 className="flex mx-auto text-white bg-green-600 border-0 py-2 px-8 focus:outline-none hover:bg-green-700 rounded text-lg"
               >
-                Button
+                Submit
               </button>
             </div>
             <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
