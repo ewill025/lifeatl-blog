@@ -18,8 +18,18 @@ export default{
       },
     },
     {
-      name: 'image',
-      title: 'Image',
+      name: 'title',
+      title: 'Title',
+      type: 'string',
+    },
+    {
+      name:'location',
+      title:'Location',
+      type:'string',
+    },
+    {
+      name: 'profileImage',
+      title: 'profileImage',
       type: 'image',
       options: {
         hotspot: true,
@@ -28,30 +38,28 @@ export default{
     {
       name: 'bio',
       title: 'Bio',
-      type: 'array',
-      of: [
-        {
-          title: 'Block',
-          type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
-          lists: [],
-        },
-      ],
+      type: 'blockContent',
     },
     {
         title: 'Twitter',
-        name: 'href',
+        name: 'twitter',
         type: 'url',
-        validation: Rule => Rule.uri({
-          scheme: ['http', 'https', 'mailto', 'tel']
-        })
       },
-     
+      {
+        title: 'Instagram',
+        name: 'instagram',
+        type: 'url',
+      },
+      {
+        title: 'Facebook',
+        name: 'facebook',
+        type: 'url',
+      },
   ],
   preview: {
     select: {
       title: 'name',
-      media: 'image',
+      media: 'profileImage',
     },
   },
 }

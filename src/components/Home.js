@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.css";
-import { Slider } from "./Carousel.component.js";
+import {Slider}  from "./Carousel.component.js";
 import BlogPreviewList from "./blog-preview-list";
 import UpcomingEvents from "./UpcomingEvents";
+
+
 import "./home.css";
 
 class Home extends Component {
